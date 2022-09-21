@@ -1,0 +1,474 @@
+/*--- FONTS immer am ANFANG ---*/
+
+/* raleway-regular - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/raleway-v22-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Raleway'), local('Raleway Regular'), /* Diese Zeile wurde jeweils nicht autmatisch ausgefüllt. Hab ichdann bei Ruben abgeschrieben*/
+       url('../fonts/raleway-v22-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/raleway-v22-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/raleway-v22-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/raleway-v22-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/raleway-v22-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+/* raleway-700 - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/raleway-v22-latin-700.eot'); /* IE9 Compat Modes */
+    src: local('Raleway'), local('Raleway Regular'),
+       url('../fonts/raleway-v22-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/raleway-v22-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/raleway-v22-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/raleway-v22-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/raleway-v22-latin-700.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+/* raleway-italic - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 400;
+  src: url('/fonts/raleway-v22-latin-italic.eot'); /* IE9 Compat Modes */
+    src: local('Raleway'), local('Raleway Italic'),
+       url('../fonts/raleway-v22-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/raleway-v22-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/raleway-v22-latin-italic.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/raleway-v22-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/raleway-v22-latin-italic.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+/* raleway-700italic - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 700;
+  src: url('/fonts/raleway-v22-latin-700italic.eot'); /* IE9 Compat Modes */
+  src: local('Raleway'), local('Raleway Italic'),
+       url('../fonts/raleway-v22-latin-700italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/raleway-v22-latin-700italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/raleway-v22-latin-700italic.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/raleway-v22-latin-700italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/raleway-v22-latin-700italic.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+
+/* lato-regular - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/lato-v20-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Lato'), local('Lato Regular'),
+       url('../fonts/lato-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/lato-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/lato-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/lato-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/lato-v20-latin-regular.svg#Lato') format('svg'); /* Legacy iOS */
+}
+/* lato-italic - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: url('/fonts/lato-v20-latin-italic.eot'); /* IE9 Compat Modes */
+  src: local('Lato'), local('Lato Italic'),
+       url('../fonts/lato-v20-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/lato-v20-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/lato-v20-latin-italic.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/lato-v20-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/lato-v20-latin-italic.svg#Lato') format('svg'); /* Legacy iOS */
+}
+/* lato-700 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/lato-v20-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Lato'), local('Lato Regular'),
+       url('../fonts/lato-v20-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/lato-v20-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/lato-v20-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/lato-v20-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('.../fonts/lato-v20-latin-700.svg#Lato') format('svg'); /* Legacy iOS */
+}
+/* lato-700italic - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: url('/fonts/lato-v20-latin-700italic.eot'); /* IE9 Compat Modes */
+  src: local('Lato'), local('Lato Italic'),
+       url('../fonts/lato-v20-latin-700italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/lato-v20-latin-700italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/lato-v20-latin-700italic.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/lato-v20-latin-700italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/lato-v20-latin-700italic.svg#Lato') format('svg'); /* Legacy iOS */
+}
+
+/*--- FONTS ENDE ---*/
+
+/* === FARBEN als Referenzen === */
+
+/*
+Blau: #1F4E8C
+
+Dunkelgrau: #3d3f45
+
+Hellgrau: #e5e5e5
+
+Rot: #a62c21
+
+*/
+
+
+/* === GLOBAL === Einstellungen für alle Seiten */
+
+html {
+  font-size: 16px;
+}
+
+
+
+body {
+  margin: 0;/* Sonst hat man automatisch margin 8 da stehen*/
+  font-family: 'Raleway', 'Lato', 'Helvetica Neue', 'Arial', sans-serif;
+
+}
+
+* { /* Sternchen wählt alle Elemente aus. */
+  box-sizing: border-box; /* Hiermit werden die Aussenmasse der Elemente eingehalten */
+}
+
+/* === GENERELLES === Einstellungen die nicht auf alle Seiten zutreffen aber von allen genutzt werden können */
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.wichtiger-text {
+  font-weight: bold;
+}
+
+.screenreader {
+  display: none;
+}
+
+.btn-typ-1 {
+  background-color: #a62c21;
+  border: 2px solid #a62c21;
+  color: #FFF;
+  padding: .4rem .6rem;
+}
+
+/* Das Navi-Element der aktiven Seite soll rot hinterlegt werden: */
+
+.active {
+  background-color: #a62c21 !important;
+}
+
+/* === ANFANG NAVIGATIONSLEISTE INSGESAMT === */
+
+/* == ANFANG GROSSE NAVIGATIONSLEISTE == */
+
+/* Dunkelgraue Navi-Leiste */
+
+.header-nav {
+  width: 100%;
+  height: 50px;
+  background-color: #3d3f45;
+  position: relative;
+  /* font-weight: bold; */
+  font-size: 1.1rem;
+}
+
+/* Grösse und Positionierung Logo links*/
+
+.header-nav a > img {
+  height: 30px;
+  width: auto;
+  margin-top: 0.5rem;
+  float: left;
+}
+
+/* margin und padding  beim ul-Element weg und Positionierung rechts mittig*/
+
+.header-nav ul {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  float: right;
+}
+
+/* Listenpunkte horizontal */
+
+.header-nav ul > li {
+  display: inline-block;
+  height: 100%;
+  padding: 0 .4rem 0 .4rem;
+}
+
+/* Das sind die Anker-Elemente */
+
+.header-nav ul > li > a {
+  display: inline-block;
+  margin-top: .8rem;
+}
+
+/* Styling der Linkstadien */
+
+.header-nav ul > li > a:link{
+  color: #fff;
+  text-decoration: none;
+}
+
+.header-nav ul > li > a:visited{
+  color: #fff;
+  text-decoration: none;
+}
+
+.header-nav ul > li > a:hover{
+  color: #e5e5e5;
+  text-decoration: none;
+}
+
+.header-nav ul > li > a:active{
+  color: #e5e5e5;
+  text-decoration: none;
+}
+
+.header-nav .container {
+  height: 100%;
+}
+
+.header-nav .row {
+  height: 100%;
+}
+
+.header-nav .col-6 { /* Hier lösche ich das padding der Navi col-6 */
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 100%;
+}
+
+
+/* == ENDE GROSSE NAVIGATIONSLEISTE == */
+
+/* == ANFANG MOBILE NAVIGATIONSLEISTE == */
+
+.mobile-nav-dropdown {
+  position: relative;
+  display: inline-block;
+  float: right;
+}
+
+.mobile-nav-content {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  display: none;
+}
+
+.mobile-nav-button {
+  color: #fff;
+  float: right;
+  font-size: 2rem;
+  border: solid;
+  width: 37px;
+  height: 37px;
+  position: relative;
+  margin-top: .4rem;
+  margin-bottom: 8px;
+}
+
+.mobile-nav-button > span {
+  position: absolute;
+  bottom: -2.5px;
+  left: 6px;
+}
+
+.mobile-nav-content > ul > li {
+  display: block;
+  background-color: #3d3f45;
+  height: 50px;
+  padding: 0 1.2rem;
+  text-align: center;
+}
+
+.mobile-nav-dropdown:hover > .mobile-nav-content {
+  display: block;
+}
+
+
+/* === ENDE NAVIGATIONSLEISTE INSGESAMT=== */
+
+/* === ANFANG GROSSES HEADER-BANNER === */
+
+.header-banner {
+  width: 100%;
+  height: 0;
+  padding-top: 20.83%;
+  background: url("../img/hintergrund.jpg") no-repeat;
+  background-size: contain;
+}
+
+/* === ENDE GROSSES HEADER-BANNER === */
+
+/* === ANFANG KLEINES HEADER-BANNER === */
+
+.header-banner-klein {
+  width: 100%;
+  height: 0;
+  padding-top: 15.625%;
+  background: url("../img/hintergrund-klein.jpg") no-repeat;
+  background-size: contain;
+}
+
+/* === ENDE KLEINES HEADER-BANNER === */
+
+
+/* === ANFANG NEWSLETTER-BEREICH === */
+
+.newsletter-bereich {
+  width: 100%;
+  background-color: #3d3f45;
+}
+
+#nb-werbetext {
+  color: #FFF;
+  font-size: 1.2 rem;
+}
+
+#nb-form {
+  width: 100%;
+  margin-top: .5rem;
+  float: right;
+  text-align: right;
+}
+
+.nb-email-input {
+  width: 78%;
+  height: 35px;
+  border: 2px solid #FFF;
+  padding: .4rem;
+}
+
+
+#nb-btn {
+  height: 35px;
+}
+
+/* Media Queries für Newsletter Bereich */
+
+@media (max-width: 1832px) {
+
+  .nb-email-input {
+    width: 70%;
+  }
+}
+
+
+/* === ENDE NEWSLETTER-BEREICH === */
+
+
+
+/*
+
+ === ANFANG GRID-SYSTEM SICHTBARKEIT wird später wieder gelöscht ===
+
+.border * { /* Selektor für alle Elemente für Border
+  border: 1px solid #91c4ff;
+}
+
+[class*="col-"] { /* Selektor für alle Columns für Zellhigru
+  background-color: #bfddff;
+}
+
+p { /* Inhalt aller p's soll sich ausbreiten und wieder dunkleres Blau
+  background-color: #91c4ff;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  text-align: center;
+}
+
+ */
+
+
+/* === ENDE GRID-SYSTEM SICHTBARKEIT wird später wieder gelöscht=== */
+
+
+
+/* === ANFANG GRID-SYSTEM === */
+
+.container {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Das ist der Clearfix-Hack: */
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* Das sind Höhe und Breite für die Columns: */
+
+[class*="col-"] {
+  float: left;
+  min-height: 1px;
+  padding: .8rem;
+/*  height: 100px;
+  background-color: grey; Sichtkontrolle */
+}
+
+.col-1 { width: 16.666%; }
+.col-2 { width: 33.333%; }
+.col-3 { width: 50%;     }
+.col-4 { width: 66.666%; }
+.col-6 { width: 100%;    }
+
+
+/* === ANFANG MEDIA QUERIES RESPONSIVE === */
+
+@media (max-width: 1024px) { /* Die Regeln gelten bis zu dieser Breite und danach nicht mehr! Ab hier wieder normales Design */
+
+  .col-1 { width: 33.333%; }
+
+}
+
+@media (max-width: 768px) { /* Die Regeln gelten bis zu dieser Breite und danach nicht mehr! Ab hier wieder nächst breiteres Design */
+
+  .col-1 { width: 50%;  }
+  .col-2 { width: 100%; }
+  .col-3 { width: 100%; }
+  .col-4 { width: 100%; }
+}
+
+@media (max-width: 480px) { /* Die Regeln gelten bis zu dieser Breite und danach nicht mehr! Ab hier wieder nächst breiteres Design */
+
+  .col-1 { width: 100%;  }
+  .col-2 { width: 100%; }
+  .col-3 { width: 100%; }
+  .col-4 { width: 100%; }
+}
+
+.mobile-nav {
+  display: none;
+}
+
+@media (max-width: 768px) {/* Ändern der Navi-Leisten Gross und Klein */
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+}

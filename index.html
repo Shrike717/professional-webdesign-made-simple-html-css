@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="de">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive machen -->
+		<title>Startseite</title>
+		<link rel="stylesheet" type="text/css" href="src/css/styles.css">
+	</head>
+
+	<body>
+
+		<!-- === ANFANG NAVIGATIONSLEISTE === -->
+
+		<nav class="header-nav"> <!-- Das ist ein Blockelement -->
+
+			<!-- === ANFANG GRID-SYSTEM FÜR NAVIGATIONSLEISTE GROSS === -->
+
+			<!-- Emmet: div.container>div.row>div.col-6 -->
+
+			<div class="container desktop-nav">
+				<div class="row">
+					<div class="col-6">
+
+						<a href="index.html">
+							<img src="src/img/webdesign-logo.png" alt="DasLogo von Webdesign made simple">
+						</a>
+
+						<!-- ul>li*4>a Das wäre der Emmet Befehl für die Liste-->
+
+						<ul>
+							<li class="active"><a href="index.html">Startseite</a></li>
+							<li><a href="leistungen.html">Leistungen</a></li>
+							<li><a href="kontakt.html">Kontakt</a></li>
+							<li><a href="impressum.html">Impressum</a></li>
+						</ul>
+
+					</div>
+				</div>
+			</div>
+
+			<!-- === ANFANG GRID-SYSTEM FÜR NAVIGATIONSLEISTE KLEIN === -->
+
+			<!-- Emmet: div.container>div.row>div.col-6 -->
+
+			<div class="container mobile-nav">
+				<div class="row">
+					<div class="col-6">
+
+						<a href="index.html">
+							<img src="src/img/webdesign-logo.png" alt="DasLogo von Webdesign made simple">
+						</a>
+
+						<!-- div.mobile-nav-dropdown Emmet -->
+
+							<div class="mobile-nav-dropdown clearfix">
+
+								<div class="mobile-nav-button"><span>&equiv;</span></div>
+
+									<!-- div.mobile-nav-content Emmet -->
+
+									<div class="mobile-nav-content clearfix">
+
+										<!-- ul>li*4>a Das wäre der Emmet Befehl für die Liste-->
+
+									<ul>
+										<li class="active"><a href="index.html">Startseite</a></li>
+										<li><a href="leistungen.html">Leistungen</a></li>
+										<li><a href="kontakt.html">Kontakt</a></li>
+										<li><a href="impressum.html">Impressum</a></li>
+									</ul>
+
+								</div>
+
+							</div>
+
+					</div>
+				</div>
+			</div>
+
+
+		</nav>
+
+		<!-- === ENDE NAVIGATIONSLEISTE === -->
+
+
+		<!-- === ANFANG GROSSES HEADER-BANNER === -->
+
+		<header class="header-banner"></header>
+
+		<!-- === ENDE GROSSES HEADER-BANNER === -->
+
+		
+		<!-- === ANFANG NEWSLETTE-BEREICH === -->
+		
+		<!-- div.container>div.row>div.col-4+div.col-2 -->
+
+		<section class="newsletter-bereich">
+
+			<div class="container">
+				<div class="row">
+					<div class="col-4">
+						<p id="nb-werbetext"><span class="wichtiger-text">Melde Dich jetzt für den Newsletter an und verpasse nichts mehr!</span> Wir schicken Dir nur interessante Informationen!</p>
+					</div>
+					<div class="col-2 clearfix">
+						<form id="nb-form"action="index.html" method="post">
+							<label class="screenreader" for="nb-email">E-Mail:</label>
+							<input class="nb-email-input" id="nb-email" type="text" name="email" placeholder= "Deine E-Mail Adresse:" pattern="(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|\u0022(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*\u0022)@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])" title="Gib eine gültige Emailadresse ein!">
+							<button class="btn-typ-1" id="nb-btn" type="submit">Jetzt Anmelden!</button>
+						</form>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+
+
+		<!-- === ENDE NEWSLETTE-BEREICH === -->
+
+	</body>
+
+</html>

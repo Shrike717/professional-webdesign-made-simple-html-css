@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive machen -->
+		<title>Impressum</title>
+		<link rel="stylesheet" type="text/css" href="src/css/styles.css">
+	</head>
+
+	<body>
+
+		<!-- === ANFANG NAVIGATIONSLEISTE === -->
+
+		<nav class="header-nav"> <!-- Das ist ein Blockelement -->
+
+			<!-- === ANFANG GRID-SYSTEM FÜR NAVIGATIONSLEISTE GROSS === -->
+
+			<!-- Emmet: div.container>div.row>div.col-6 -->
+
+			<div class="container desktop-nav">
+				<div class="row">
+					<div class="col-6">
+
+						<a href="index.html">
+							<img src="src/img/webdesign-logo.png" alt="DasLogo von Webdesign made simple">
+						</a>
+
+						<!-- ul>li*4>a Das wäre der Emmet Befehl für die Liste-->
+
+						<ul>
+							<li><a href="index.html">Startseite</a></li>
+							<li><a href="leistungen.html">Leistungen</a></li>
+							<li><a href="kontakt.html">Kontakt</a></li>
+							<li class="active"><a href="impressum.html">Impressum</a></li>
+						</ul>
+
+					</div>
+				</div>
+			</div>
+
+			<!-- === ANFANG GRID-SYSTEM FÜR NAVIGATIONSLEISTE KLEIN === -->
+
+			<!-- Emmet: div.container>div.row>div.col-6 -->
+
+			<div class="container mobile-nav">
+				<div class="row">
+					<div class="col-6">
+
+						<a href="index.html">
+							<img src="src/img/webdesign-logo.png" alt="DasLogo von Webdesign made simple">
+						</a>
+
+						<!-- div.mobile-nav-dropdown Emmet -->
+
+							<div class="mobile-nav-dropdown clearfix">
+
+								<div class="mobile-nav-button"><span>&equiv;</span></div>
+
+									<!-- div.mobile-nav-content Emmet -->
+
+									<div class="mobile-nav-content clearfix">
+
+										<!-- ul>li*4>a Das wäre der Emmet Befehl für die Liste-->
+
+									<ul>
+										<li><a href="index.html">Startseite</a></li>
+										<li><a href="leistungen.html">Leistungen</a></li>
+										<li><a href="kontakt.html">Kontakt</a></li>
+										<li  class="active"><a href="impressum.html">Impressum</a></li>
+									</ul>
+
+								</div>
+
+							</div>
+
+					</div>
+				</div>
+			</div>
+
+
+		</nav>
+
+		<!-- === ENDE NAVIGATIONSLEISTE === -->
+
+
+		<!-- === ANFANG KLEINES HEADER-BANNER === -->
+
+		<header class="header-banner-klein"></header>
+
+		<!-- === ENDE KLEINES HEADER-BANNER === -->
+
+
+	</body>
+
+</html>

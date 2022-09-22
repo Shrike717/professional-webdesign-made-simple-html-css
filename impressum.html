@@ -12,13 +12,13 @@
 
 		<!-- === ANFANG NAVIGATIONSLEISTE === -->
 
-		<nav class="header-nav"> <!-- Das ist ein Blockelement -->
+		<nav id="header-nav"> <!-- Das ist ein Blockelement -->
 
 			<!-- === ANFANG GRID-SYSTEM FÜR NAVIGATIONSLEISTE GROSS === -->
 
 			<!-- Emmet: div.container>div.row>div.col-6 -->
 
-			<div class="container desktop-nav">
+			<div class="container" id="desktop-nav">
 				<div class="row">
 					<div class="col-6">
 
@@ -43,23 +43,23 @@
 
 			<!-- Emmet: div.container>div.row>div.col-6 -->
 
-			<div class="container mobile-nav">
+			<div class="container" id="mobile-nav">
 				<div class="row">
 					<div class="col-6">
 
 						<a href="index.html">
-							<img src="src/img/webdesign-logo.png" alt="DasLogo von Webdesign made simple">
+							<img src="src/img/webdesign-logo.png" alt="Das Logo von Webdesign made simple">
 						</a>
 
 						<!-- div.mobile-nav-dropdown Emmet -->
 
-							<div class="mobile-nav-dropdown clearfix">
+            <div class="clearfix" id="mobile-nav-dropdown">
 
-								<div class="mobile-nav-button"><span>&equiv;</span></div>
+              <div id="mobile-nav-button"><span>&equiv;</span></div>
 
-									<!-- div.mobile-nav-content Emmet -->
+                <!-- div.mobile-nav-content Emmet -->
 
-									<div class="mobile-nav-content clearfix">
+                <div class="clearfix" id="mobile-nav-content">
 
 										<!-- ul>li*4>a Das wäre der Emmet Befehl für die Liste-->
 
@@ -86,7 +86,7 @@
 
 		<!-- === ANFANG KLEINES HEADER-BANNER === -->
 
-		<header class="header-banner-klein"></header>
+		<header id="header-banner-klein"></header>
 
 		<!-- === ENDE KLEINES HEADER-BANNER === -->
 

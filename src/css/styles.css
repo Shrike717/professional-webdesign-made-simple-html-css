@@ -175,7 +175,7 @@ body {
 
 /* Dunkelgraue Navi-Leiste */
 
-.header-nav {
+#header-nav {
   width: 100%;
   height: 50px;
   background-color: #3d3f45;
@@ -186,7 +186,7 @@ body {
 
 /* Grösse und Positionierung Logo links*/
 
-.header-nav a > img {
+#header-nav a > img {
   height: 30px;
   width: auto;
   margin-top: 0.5rem;
@@ -195,7 +195,7 @@ body {
 
 /* margin und padding  beim ul-Element weg und Positionierung rechts mittig*/
 
-.header-nav ul {
+#header-nav ul {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -204,7 +204,7 @@ body {
 
 /* Listenpunkte horizontal */
 
-.header-nav ul > li {
+#header-nav ul > li {
   display: inline-block;
   height: 100%;
   padding: 0 .4rem 0 .4rem;
@@ -212,42 +212,42 @@ body {
 
 /* Das sind die Anker-Elemente */
 
-.header-nav ul > li > a {
+#header-nav ul > li > a {
   display: inline-block;
   margin-top: .8rem;
 }
 
 /* Styling der Linkstadien */
 
-.header-nav ul > li > a:link{
+#header-nav ul > li > a:link{
   color: #fff;
   text-decoration: none;
 }
 
-.header-nav ul > li > a:visited{
+#header-nav ul > li > a:visited{
   color: #fff;
   text-decoration: none;
 }
 
-.header-nav ul > li > a:hover{
+#header-nav ul > li > a:hover{
   color: #e5e5e5;
   text-decoration: none;
 }
 
-.header-nav ul > li > a:active{
+#header-nav ul > li > a:active{
   color: #e5e5e5;
   text-decoration: none;
 }
 
-.header-nav .container {
+#header-nav .container {
   height: 100%;
 }
 
-.header-nav .row {
+#header-nav .row {
   height: 100%;
 }
 
-.header-nav .col-6 { /* Hier lösche ich das padding der Navi col-6 */
+#header-nav .col-6 { /* Hier lösche ich das padding der Navi col-6 */
   padding-top: 0;
   padding-bottom: 0;
   height: 100%;
@@ -258,20 +258,20 @@ body {
 
 /* == ANFANG MOBILE NAVIGATIONSLEISTE == */
 
-.mobile-nav-dropdown {
+#mobile-nav-dropdown {
   position: relative;
   display: inline-block;
   float: right;
 }
 
-.mobile-nav-content {
+#mobile-nav-content {
   position: absolute;
   top: 50px;
   right: 0;
   display: none;
 }
 
-.mobile-nav-button {
+#mobile-nav-button {
   color: #fff;
   float: right;
   font-size: 2rem;
@@ -283,13 +283,13 @@ body {
   margin-bottom: 8px;
 }
 
-.mobile-nav-button > span {
+#mobile-nav-button > span {
   position: absolute;
   bottom: -2.5px;
-  left: 6px;
+  left: 7px;
 }
 
-.mobile-nav-content > ul > li {
+#mobile-nav-content > ul > li {
   display: block;
   background-color: #3d3f45;
   height: 50px;
@@ -297,7 +297,7 @@ body {
   text-align: center;
 }
 
-.mobile-nav-dropdown:hover > .mobile-nav-content {
+#mobile-nav-dropdown:hover > #mobile-nav-content {
   display: block;
 }
 
@@ -306,7 +306,7 @@ body {
 
 /* === ANFANG GROSSES HEADER-BANNER === */
 
-.header-banner {
+#header-banner {
   width: 100%;
   height: 0;
   padding-top: 20.83%;
@@ -318,7 +318,7 @@ body {
 
 /* === ANFANG KLEINES HEADER-BANNER === */
 
-.header-banner-klein {
+#header-banner-klein {
   width: 100%;
   height: 0;
   padding-top: 15.625%;
@@ -331,7 +331,7 @@ body {
 
 /* === ANFANG NEWSLETTER-BEREICH === */
 
-.newsletter-bereich {
+#newsletter-bereich {
   width: 100%;
   background-color: #3d3f45;
 }
@@ -348,7 +348,7 @@ body {
   text-align: right;
 }
 
-.nb-email-input {
+#nb-email-input {
   width: 78%;
   height: 35px;
   border: 2px solid #FFF;
@@ -364,14 +364,14 @@ body {
 
 @media (max-width: 1832px) {
 
-  .nb-email-input {
+  #nb-email-input {
     width: 70%;
   }
 }
 
 @media (max-width: 1366px) {
 
-  .nb-email-input {
+  #nb-email-input {
     width: 100%;
     margin-bottom: .5rem;
   }
@@ -391,14 +391,14 @@ body {
     margin-top: 0px;
   }
 
-  .newsletter-bereich .col-4 {
+  #newsletter-bereich .col-4 {
     display: none;
   }
 }
 
 @media (max-width: 480px) {
 
-  .nb-email-input {
+  #nb-email-input {
     height: 25px;
   }
 
@@ -497,17 +497,17 @@ p { /* Inhalt aller p's soll sich ausbreiten und wieder dunkleres Blau
   .col-4 { width: 100%; }
 }
 
-.mobile-nav {
+#mobile-nav {
   display: none;
 }
 
 @media (max-width: 768px) {/* Ändern der Navi-Leisten Gross und Klein */
 
-  .desktop-nav {
+  #desktop-nav {
     display: none;
   }
 
-  .mobile-nav {
+  #mobile-nav {
     display: block;
   }
 }

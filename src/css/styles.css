@@ -128,6 +128,11 @@ html {
   font-size: 16px;
 }
 
+/* box-shadows: x-versatz y-versatz Weichzeichnung Vergrößerung Farbe (inset) */
+:focus {
+  outline: none;
+  box-shadow: 0 0 2px 2px #e5e5e5, 0 0 2px #e5e5e5;
+}
 
 
 body {
@@ -138,6 +143,11 @@ body {
 
 * { /* Sternchen wählt alle Elemente aus. */
   box-sizing: border-box; /* Hiermit werden die Aussenmasse der Elemente eingehalten */
+}
+
+section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 /* === GENERELLES === Einstellungen die nicht auf alle Seiten zutreffen aber von allen genutzt werden können */
@@ -163,6 +173,22 @@ body {
   padding: .4rem .6rem;
 }
 
+.intro-container {
+  text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2.5rem;
+}
+
+.intro-container > h1 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.intro-container > p {
+  font-size: 1.2rem;
+}
 /* Das Navi-Element der aktiven Seite soll rot hinterlegt werden: */
 
 .active {
@@ -184,6 +210,11 @@ body {
   font-size: 1.1rem;
 }
 
+/* Anker Element um Logo */
+
+.logo-link {
+  display: inline-block;
+}
 /* Grösse und Positionierung Logo links*/
 
 #header-nav a > img {
@@ -334,6 +365,8 @@ body {
 #newsletter-bereich {
   width: 100%;
   background-color: #3d3f45;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 #nb-werbetext {

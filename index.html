@@ -22,7 +22,7 @@
 				<div class="row">
 					<div class="col-6">
 
-						<a href="index.html">
+						<a href="index.html" class="logo-link">
 							<img src="src/img/webdesign-logo.png" alt="DasLogo von Webdesign made simple">
 						</a>
 
@@ -41,23 +41,23 @@
 
 			<!-- === ANFANG GRID-SYSTEM FÜR NAVIGATIONSLEISTE KLEIN === -->
 
-			<!-- Emmet: div.container>div.row>div.col-6 -->
+			<!-- Emmet: div.container#mobile-nav>div.row>div.col-6 -->
 
 			<div class="container" id="mobile-nav">
 				<div class="row">
 					<div class="col-6">
 
-						<a href="index.html">
+						<a href="index.html" class="logo-link">
 							<img src="src/img/webdesign-logo.png" alt="DasLogo von Webdesign made simple">
 						</a>
 
-						<!-- div.mobile-nav-dropdown Emmet -->
+						<!-- div#mobile-nav-dropdown Emmet -->
 
 							<div class="clearfix" id="mobile-nav-dropdown">
 
 								<div id="mobile-nav-button"><span>&equiv;</span></div>
 
-									<!-- div.mobile-nav-content Emmet -->
+									<!-- div#mobile-nav-content Emmet -->
 
 									<div class="clearfix" id="mobile-nav-content">
 
@@ -91,7 +91,7 @@
 		<!-- === ENDE GROSSES HEADER-BANNER === -->
 
 
-		<!-- === ANFANG NEWSLETTE-BEREICH === -->
+		<!-- === ANFANG NEWSLETTER-BEREICH === -->
 
 		<!-- div.container>div.row>div.col-4+div.col-2 -->
 
@@ -114,9 +114,54 @@
 
 		</section>
 
-
-
 		<!-- === ENDE NEWSLETTE-BEREICH === -->
+
+
+    <!-- === ANFANG LEISTUNGEN-BEREICH === -->
+
+    <!-- Mein Emmet:  section#leistungen-bereich>div.container>(div.row>div.col-6>h1+p)+div.row(div.col-3>h2+p+a)*2+div.row(div.col-3>h2+p+a)*2 -->
+
+    <!-- Rubens Emmet:  section#leistungen-bereich>div.container>div.row>div.col-6>h1{Unsere Leistungen}+p{lorem}^^(div.row>(div.col-3>h2{Leistung#$}+p{lorem}+a{Ansehen})*2)*2-->
+
+
+    <section id="leistungen-bereich">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <header class="intro-container">
+              <h1>Unsere Leistungen:</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, porro dolore vero aliquid aliquam illum quam quidem, eveniet tempora adipisci voluptate facere. Minus harum ipsa aperiam porro ut, corporis animi?</p>
+            </header>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3">
+            <h2>Leistung #1</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore veniam debitis illum omnis, quo expedita. Illum id, esse culpa dignissimos blanditiis eaque maiores aut similique, quibusdam alias numquam beatae cumque?</p>
+            <a class="btn-typ-1" href="leistungen.html#leistung1">Ansehen</a>
+          </div>
+          <div class="col-3">
+            <h2>Leistung #2</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, illo sequi consequuntur sint vitae qui nobis quas, minima placeat, ullam vel nesciunt ea exercitationem nostrum vero. Quos tempore earum optio.</p>
+            <a href="leistungen.html#leistung2">Ansehen</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3">
+            <h2>Leistung #3</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, beatae? Facere tempore deserunt corporis vitae odio commodi laborum quae sed impedit doloremque natus autem odit nemo, animi reiciendis architecto eaque.</p>
+            <a href="leistungen.html#leistung3">Ansehen</a>
+          </div>
+          <div class="col-3">
+            <h2>Leistung #4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis facere vitae vero suscipit, molestiae tempora laudantium odio consequuntur amet! Impedit, quae inventore nesciunt sint molestiae omnis non voluptate. Doloremque, consequatur.</p>
+            <a href="leistungen.html#leistung4">Ansehen</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!-- === ENDE LEISTUNGEN-BEREICH === -->
 
 	</body>
 

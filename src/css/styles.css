@@ -150,6 +150,33 @@ section {
   padding-bottom: 4rem;
 }
 
+/* Media Queries für section Responsiveness: */
+
+@media (max-width: 1366px) {
+
+  section {
+    padding-top: 2rem;
+    padding-bottom: 2 rem;
+  }
+
+}
+
+@media (max-width: 1024px) {
+
+  section {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  section {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+}
 /* === GENERELLES === Einstellungen die nicht auf alle Seiten zutreffen aber von allen genutzt werden können */
 
 .clearfix::after {
@@ -206,6 +233,36 @@ section {
 
 .intro-container > p {
   font-size: 1.2rem;
+}
+
+/* Hier Media-queries für den Intro-bereich im Leistunngs-Bereich */
+
+@media (max-width: 1366px) {
+
+  .intro-container {
+    width: 90%;
+    }
+    .intro-container > p {
+      margin-bottom: .5rem;
+    }
+}
+
+@media (max-width: 1024px) {
+
+  .intro-container {
+    width: 100%;
+    }
+    .intro-container > p {
+      margin-bottom: 0;
+    }
+}
+
+@media (max-width: 768px) {
+
+  .intro-container > p {
+    margin-bottom: 0;
+  }
+
 }
 /* Das Navi-Element der aktiven Seite soll rot hinterlegt werden: */
 
@@ -494,6 +551,7 @@ margin-bottom: 1.6rem;
   display: inline-block;
   padding-top: .5rem;
   width: 40%;
+  min-width: 100px;
   margin-top: 1rem;
 }
 
@@ -516,6 +574,52 @@ margin-bottom: 1.6rem;
   font-weight: bold;
   border: 2px solid #a62c21;
 }
+
+/* Media Queris für die Leistungs-Boxen im Leistungsbereich: */
+
+@media (max-width: 1366px) {
+
+  .leistungs-box {
+    width: 75%;
+    }
+}
+
+@media (max-width: 1024px) {
+
+  .leistungs-box {
+    width: 90%;
+    margin-bottom: 1rem;
+    }
+
+    #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-box {
+      margin-left: 0.5rem;
+    }
+
+    #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-box {
+      margin-right: 0.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+  .leistungs-box {
+    width: 100%;
+    margin-bottom: 1rem;
+    }
+
+  #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-box {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-box {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+}
+
+
 
 /* === ENDE LEISTUNGS-BEREICH === */
 

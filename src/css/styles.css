@@ -713,6 +713,22 @@ font-size: 1.4rem;
   background: #3d3f45 url("./../img/services-sprite.png") -240px 0;
 }
 
+@media (max-width: 768px) {
+
+  #service-bereich .row:nth-child(2) > div:nth-child(odd) > .service-box {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .service-box {
+    width: 100%;
+  }
+
+}
 
 /* === ENDE SERVICE-BEREICH === */
 

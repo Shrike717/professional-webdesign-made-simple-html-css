@@ -115,7 +115,7 @@ Blau: #1F4E8C
 
 Dunkelgrau: #3d3f45
 
-Hellgrau: #e5e5e5
+Hellgrau: #F0F0F0
 
 Rot: #a62c21
 
@@ -131,7 +131,7 @@ html {
 /* box-shadows: x-versatz y-versatz Weichzeichnung Vergrößerung Farbe (inset) */
 :focus {
   outline: none;
-  box-shadow: 0 0 2px 2px #e5e5e5, 0 0 2px #e5e5e5;
+  box-shadow: 0 0 2px 2px #F0F0F0, 0 0 2px #F0F0F0;
 }
 
 
@@ -336,12 +336,12 @@ section {
 }
 
 #header-nav ul > li > a:hover{
-  color: #e5e5e5;
+  color: #F0F0F0;
   text-decoration: none;
 }
 
 #header-nav ul > li > a:active{
-  color: #e5e5e5;
+  color: #F0F0F0;
   text-decoration: none;
 }
 
@@ -666,6 +666,55 @@ margin-bottom: 1.6rem;
 }
 /* === ENDE VIDEO-BEREICH === */
 
+/* === ANFANG SERVICE-BEREICH === */
+#service-bereich {
+  background-color: #F0F0F0
+  ;
+}
+
+.service-box {
+  text-align: center;
+  width: 80%;
+}
+
+.service-box h1{
+font-size: 1.4rem;
+}
+
+
+#service-bereich .row:nth-child(2) > div:nth-child(1) > .service-box {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+#service-bereich .row:nth-child(2) > div:nth-child(2) > .service-box {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.service-icon {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#günstig-icon {
+  background: #3d3f45 url("./../img/services-sprite.png") 0 0;
+}
+
+#schnell-icon {
+  background: #3d3f45 url("./../img/services-sprite.png") -120px 0;
+
+}
+
+#modern-icon {
+  background: #3d3f45 url("./../img/services-sprite.png") -240px 0;
+}
+
+
+/* === ENDE SERVICE-BEREICH === */
 
 /*
 

@@ -732,6 +732,32 @@ font-size: 1.4rem;
 
 /* === ENDE SERVICE-BEREICH === */
 
+/* === ANFANG ÜBER-UNS-BEREICH === */
+
+  #über-uns-bereich {
+    background-color: #FFF;
+  }
+
+  #über-uns-container {
+    position: relative;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+#über-uns-container > img {
+  position: absolute;
+  width: 10%;
+  top: 0;
+  right: 40px;
+}
+
+#über-uns-container > p {
+  width: 75%;
+  font-size: 1.2rem;
+}
+/* === ANFANG ÜBER-UNS-BEREICH === */
+
 /*
 
  === ANFANG GRID-SYSTEM SICHTBARKEIT wird später wieder gelöscht ===

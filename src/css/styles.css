@@ -612,7 +612,7 @@ margin-bottom: 1.6rem;
     margin-right: 0;
   }
 
-  #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-teaser-box {
+  #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-teaser-box  {
     margin-right: 0;
     margin-left: 0;
   }
@@ -863,6 +863,36 @@ font-size: 1.4rem;
 }
 
 /* === ENDE FOOTER-BEREICH === */
+
+/* === ANFANG LEISTUNGS-SEITE === */
+
+.flex-container {
+display: flex;
+width: 80%;
+margin-left: auto;
+margin-right: auto;
+justify-content: space-around;
+}
+
+.leistungs-box {
+  background-color: #3d3f45;
+  flex-basis: 25%;
+  color: #FFF;
+  padding: 2rem 4rem;
+  text-align: center;
+}
+
+.leistungs-box ul {
+  padding: 0;
+}
+
+.leistungs-box ul > li {
+  list-style-position: inside;
+}
+
+
+/* === ENDE LEISTUNGS-SEITE === */
+
 
 /*
 

@@ -876,22 +876,35 @@ align-items: center;
 }
 
 .leistungs-box {
+  display: flex;
   background-color: #3d3f45;
   flex-basis: 25%;
   color: #FFF;
   padding: 2rem 4rem;
   text-align: center;
   min-height: 600px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .leistungs-box-empfohlen {
   flex-basis: 27.5%;
-  min-height: 750px;
+  min-height: 700px;
   box-shadow: 0 0 20px 0 #3d3f45;
+  font-size: 1.05rem;
 }
 
 .leistungs-box ul {
   padding: 0;
+}
+
+.leistungs-box h1 {
+  margin-bottom: 0;
+}
+
+.leistungs-box p {
+  margin-top: 0;
 }
 
 .leistungs-box ul > li {

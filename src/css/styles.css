@@ -521,7 +521,7 @@ section {
 
 /* === ANFANG LEISTUNGS-BEREICH === */
 
-.leistungs-box {
+.leistungs-teaser-box {
 background-color: #3d3f45;
 text-align: center;
 color: #FFF;
@@ -532,15 +532,15 @@ margin-left: auto;
 margin-bottom: 1.6rem;
 }
 
-.leistungs-box > h2 {
+.leistungs-teaser-box > h2 {
   font-size: 1.4rem;
 }
 
-#leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-box {
+#leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-teaser-box {
   margin-left: 1rem;
 }
 
-#leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-box {
+#leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-teaser-box {
   margin-right: 1rem;
 }
 
@@ -579,40 +579,40 @@ margin-bottom: 1.6rem;
 
 @media (max-width: 1366px) {
 
-  .leistungs-box {
+  .leistungs-teaser-box {
     width: 75%;
     }
 }
 
 @media (max-width: 1024px) {
 
-  .leistungs-box {
+  .leistungs-teaser-box {
     width: 90%;
     margin-bottom: 1rem;
     }
 
-    #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-box {
+    #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-teaser-box {
       margin-left: 0.5rem;
     }
 
-    #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-box {
+    #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-teaser-box {
       margin-right: 0.5rem;
     }
 }
 
 @media (max-width: 768px) {
 
-  .leistungs-box {
+  .leistungs-teaser-box {
     width: 100%;
     margin-bottom: 1rem;
     }
 
-  #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-box {
+  #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-teaser-box {
     margin-left: 0;
     margin-right: 0;
   }
 
-  #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-box {
+  #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-teaser-box {
     margin-right: 0;
     margin-left: 0;
   }
@@ -836,12 +836,12 @@ font-size: 1.4rem;
   color: #FFF;
 }
 
-#footer-nav a:hover{
-  color: #F0F0F0
-}
-
 #footer-na a:visited{
   color: #FFF;
+}
+
+#footer-nav a:hover{
+  color: #F0F0F0
 }
 
 #footer-nav a:active{

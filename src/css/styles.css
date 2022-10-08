@@ -262,7 +262,6 @@ section {
   .intro-container > p {
     margin-bottom: 0;
   }
-
 }
 /* Das Navi-Element der aktiven Seite soll rot hinterlegt werden: */
 
@@ -875,6 +874,39 @@ justify-content: space-around;
 align-items: center;
 }
 
+.flex-container > .intro-container {
+  width: 100%;
+}
+
+/* Hier Media-queries für den Intro-Bereich Flex-Box auf der Leistunngs-Seite */
+
+@media (max-width: 1366px) {
+
+  .flex-container {
+    width: 90%;
+    }
+    .flex-container > p {
+      margin-bottom: .5rem;
+    }
+}
+
+@media (max-width: 1024px) {
+
+  .flex-container {
+    width: 100%;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+  .flex-container > p {
+    margin-bottom: 0;
+  }
+}
+
 .leistungs-box {
   display: flex;
   background-color: #3d3f45;
@@ -893,6 +925,58 @@ align-items: center;
   min-height: 700px;
   box-shadow: 0 0 20px 0 #3d3f45;
   font-size: 1.05rem;
+}
+
+/* Hier Media-queries für die Leistungs-Boxen Flex-Box auf der Leistunngs-Seite */
+
+@media (max-width: 1763px) {
+
+  .leistungs-box {
+    flex-basis: 29%;
+  }
+
+  .leistungs-box-empfohlen {
+    flex-basis: 31.5%;
+  }
+}
+
+@media (max-width: 1523px) {
+
+  .leistungs-box {
+    flex-basis: 30%;
+    padding: 1rem 2rem;
+  }
+
+  /* .leistungs-box-empfohlen {
+    flex-basis: 32.5%;
+  } */
+}
+
+@media (max-width: 1470px) {
+
+  .leistungs-box {
+    flex-basis: 30%;
+    padding: .5rem 1rem;
+  }
+
+  .leistungs-box-empfohlen {
+    min-height: 660px;
+  }
+}
+
+@media (max-width: 953px) {
+
+  .flex-container {
+    align-items: stretch;
+    }
+
+    .leistungs-box-empfohlen {
+      min-height: initial;
+    }
+
+    .leistung-auswählen-btn {
+      min-width: 100px;
+    }
 }
 
 .leistungs-box ul {
@@ -923,6 +1007,8 @@ align-items: center;
 .leistung-auswählen-btn:hover {
   font-weight: normal;
 }
+
+
 
 /* === ENDE LEISTUNGS-SEITE === */
 

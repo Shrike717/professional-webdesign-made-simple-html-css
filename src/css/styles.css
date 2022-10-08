@@ -927,7 +927,7 @@ align-items: center;
   font-size: 1.05rem;
 }
 
-/* Hier Media-queries für die Leistungs-Boxen Flex-Box auf der Leistunngs-Seite */
+/* Hier Media-queries für die Leistungs-Boxen Flex-Box auf der Leistungs-Seite */
 
 @media (max-width: 1763px) {
 
@@ -964,18 +964,47 @@ align-items: center;
   }
 }
 
-@media (max-width: 953px) {
+@media (max-width: 993px) {
 
   .flex-container {
-    align-items: stretch;
-    }
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 
-    .leistungs-box-empfohlen {
+    }
+    .leistungs-box {
+      margin-bottom: 2rem;
       min-height: initial;
+      padding: 2rem 4rem;
     }
-
     .leistung-auswählen-btn {
-      min-width: 100px;
+      min-width: 170px;
+    }
+}
+
+@media (max-width: 574px) {
+
+  .flex-container {
+    width: 90%;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    }
+    .leistungs-box {
+      padding: 1rem 2rem;
+    }
+}
+
+@media (max-width: 347px) {
+
+  .flex-container {
+    width: 100%;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    }
+    .leistungs-box {
+      padding: .5rem 1rem;
     }
 }
 
@@ -1002,6 +1031,7 @@ align-items: center;
   height: 2.5rem;
   font-size: 1rem;
   margin-bottom: 1.5rem;
+  min-width: 170px;
 }
 
 .leistung-auswählen-btn:hover {

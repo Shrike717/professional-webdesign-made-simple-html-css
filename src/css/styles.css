@@ -819,6 +819,7 @@ font-size: 1.4rem;
   background-color: #3d3f45;
   height: 2.8rem;
   color: #FFF;
+  bottom: 0px;
 }
 #footer-nav {
   display: inline-block;
@@ -1049,11 +1050,70 @@ align-items: center;
 
 /* === ENDE LEISTUNGS-SEITE === */
 
-/* === ANFANG LEISTUNGS-SEITE === */
+/* === ANFANG KONTAKT-SEITE === */
+
+#kontakt-formular input,
+#kontakt-formular textarea {
+  width: 100%;
+  border: 2px solid #3d3f45;
+  padding: .5rem;
+  font-size: 1rem;
+  font-family: 'Raleway', 'Lato', 'Helvetica Neue', 'Arial', sans-serif;
+  color: #3d3f45;
+}
+#kontakt-formular textarea {
+  height: 100px;
+}
+
+#kontakt-formular {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4rem;
+}
+
+.btn-typ-3 {
+  border: 2px solid #3d3f45;
+  background-color: transparent;
+  font-size: 1rem;
+  color: #3d3f45;
+  width: 150px;
+  height: 39px;
+}
+
+#kontakt-formular input:hover,
+#kontakt-formular input:focus,
+#kontakt-formular textarea:hover,
+#kontakt-formular textarea:focus,
+#kontakt-formular button:hover {
+  border: 2px solid #a62c21;
+}
 
 
 
-/* === ENDE LEISTUNGS-SEITE === */
+/* Hier Media-queries für den Kontakt-Bereich auf Kontakt-Seite */
+
+@media (max-width: 1366px) {
+
+  #kontakt-formular {
+    width: 90%;
+    }
+}
+
+@media (max-width: 1024px) {
+
+  #kontakt-formular {
+    width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+  #kontakt-formular button{
+    width: 100%;
+  }
+}
+/* === ENDE KONTAKT-SEITE === */
 
 
 /*

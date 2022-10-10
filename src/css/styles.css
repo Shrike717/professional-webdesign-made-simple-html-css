@@ -1115,6 +1115,16 @@ align-items: center;
 }
 /* === ENDE KONTAKT-SEITE === */
 
+/* === ANFANG IMPRESSUM-SEITE === */
+
+#impressum a {
+  color: #3d3f45;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* === ENDE IMPRESSUM-SEITE === */
+
 
 /*
 

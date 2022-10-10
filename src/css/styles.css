@@ -518,6 +518,29 @@ section {
 
 /* === ENDE NEWSLETTER-BEREICH === */
 
+/* === ANFANG ANIMIERTES LOGO === */
+
+#animiertes-logo {
+  height: 150px;
+  width: 150px;
+  background-color: #3d3f45;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+  padding: 25px;
+}
+
+#animiertes-logo img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* === ENDE ANIMIERTES LOGO === */
+
 /* === ANFANG LEISTUNGS-BEREICH === */
 
 .leistungs-teaser-box {

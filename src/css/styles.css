@@ -198,10 +198,10 @@ section {
   border: 2px solid #a62c21;
   color: #FFF;
   padding: .4rem .6rem;
+  transition: border .3s ease-in-out;
 }
 
 .btn-typ-1:hover {
-  background-color: #a62c21;
   border: 2px solid #FFF;
 }
 
@@ -210,11 +210,23 @@ section {
   background-color: transparent;
   color: #FFF;
   padding: .4rem .6rem;
+  transition: color .3s ease-in-out, border .3s ease-in-out;
 }
 
 .btn-typ-2:hover {
   color: #a62c21;
-  font-weight: bold;
+  border: 2px solid #a62c21;
+}
+
+.btn-typ-3 {
+  border: 2px solid #3d3f45;
+  background-color: transparent;
+  font-size: 1rem;
+  color: #3d3f45;
+  transition: border .3s ease-in-out;
+}
+
+.btn-typ-3:hover {
   border: 2px solid #a62c21;
 }
 
@@ -224,7 +236,7 @@ section {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2.5rem;
-}
+}‚
 
 .intro-container > h1 {
   font-size: 1.6rem;
@@ -625,7 +637,6 @@ margin-bottom: 1.6rem;
 
 .leistung-ansehen-btn:hover {
   color: #a62c21;
-  font-weight: bold;
   border: 2px solid #a62c21;
 }
 
@@ -752,6 +763,11 @@ font-size: 1.4rem;
   border-radius: 50%;
   margin-right: auto;
   margin-left: auto;
+  transition: transform 1s;
+}
+
+.service-icon:hover {
+  transform: rotateZ(360deg);
 }
 
 #günstig-icon {
@@ -1115,6 +1131,7 @@ align-items: center;
   font-size: 1rem;
   font-family: 'Raleway', 'Lato', 'Helvetica Neue', 'Arial', sans-serif;
   color: #3d3f45;
+  transition: border .3s ease-in-out;
 }
 #kontakt-formular textarea {
   height: 100px;
@@ -1127,20 +1144,14 @@ align-items: center;
   margin-bottom: 4rem;
 }
 
-.btn-typ-3 {
-  border: 2px solid #3d3f45;
-  background-color: transparent;
-  font-size: 1rem;
-  color: #3d3f45;
+#absendenButton {
   width: 150px;
   height: 39px;
 }
 
+
 #kontakt-formular input:hover,
-#kontakt-formular input:focus,
-#kontakt-formular textarea:hover,
-#kontakt-formular textarea:focus,
-#kontakt-formular button:hover {
+#kontakt-formular textarea:hover {
   border: 2px solid #a62c21;
 }
 

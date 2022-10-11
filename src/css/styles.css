@@ -128,12 +128,6 @@ html {
   font-size: 16px;
 }
 
-/* box-shadows: x-versatz y-versatz Weichzeichnung Vergrößerung Farbe (inset) */
-:focus {
-  outline: none;
-  box-shadow: 0 0 2px 2px #F0F0F0, 0 0 2px #F0F0F0;
-}
-
 
 body {
   margin: 0;/* Sonst hat man automatisch margin 8 da stehen*/
@@ -176,7 +170,15 @@ section {
     padding-top: .5rem;
     padding-bottom: .5rem;
   }
+
 }
+
+/* box-shadows: x-versatz y-versatz Weichzeichnung Vergrößerung Farbe (inset) */
+:focus {
+  outline: none;
+  box-shadow: 0 0 2px 2px #F0F0F0, 0 0 2px #F0F0F0;
+}
+
 /* === GENERELLES === Einstellungen die nicht auf alle Seiten zutreffen aber von allen genutzt werden können */
 
 .clearfix::after {
@@ -191,43 +193,6 @@ section {
 
 .screenreader {
   display: none;
-}
-
-.btn-typ-1 {
-  background-color: #a62c21;
-  border: 2px solid #a62c21;
-  color: #FFF;
-  padding: .4rem .6rem;
-  transition: border .3s ease-in-out;
-}
-
-.btn-typ-1:hover {
-  border: 2px solid #FFF;
-}
-
-.btn-typ-2 {
-  border: 2px solid #FFF;
-  background-color: transparent;
-  color: #FFF;
-  padding: .4rem .6rem;
-  transition: color .3s ease-in-out, border .3s ease-in-out;
-}
-
-.btn-typ-2:hover {
-  color: #a62c21;
-  border: 2px solid #a62c21;
-}
-
-.btn-typ-3 {
-  border: 2px solid #3d3f45;
-  background-color: transparent;
-  font-size: 1rem;
-  color: #3d3f45;
-  transition: border .3s ease-in-out;
-}
-
-.btn-typ-3:hover {
-  border: 2px solid #a62c21;
 }
 
 .intro-container {
@@ -247,7 +212,14 @@ section {
   font-size: 1.2rem;
 }
 
-/* Hier Media-queries für den Intro-bereich im Leistungs-Bereich */
+/* Das Navi-Element der aktiven Seite soll rot hinterlegt werden: */
+
+.active {
+  background-color: #a62c21 !important;
+}
+
+
+/* Hier Media-queries für den Intro-Bereich */
 
 @media (max-width: 1366px) {
 
@@ -257,6 +229,7 @@ section {
     .intro-container > p {
       margin-bottom: .5rem;
     }
+
 }
 
 @media (max-width: 1024px) {
@@ -267,6 +240,7 @@ section {
     .intro-container > p {
       margin-bottom: 0;
     }
+
 }
 
 @media (max-width: 768px) {
@@ -274,12 +248,48 @@ section {
   .intro-container > p {
     margin-bottom: 0;
   }
-}
-/* Das Navi-Element der aktiven Seite soll rot hinterlegt werden: */
 
-.active {
-  background-color: #a62c21 !important;
 }
+
+/* === BUTTONS ===*/
+
+.btn-typ-1 {
+  background-color: #a62c21;
+  border: 2px solid #a62c21;
+  color: #FFF;
+  padding: .4rem .6rem;
+  transition: border .3s ease-in-out;
+}
+
+.btn-typ-1:hover {
+  border: 2px solid #FFF;
+}
+
+.btn-typ-2 {
+  background-color: transparent;
+  border: 2px solid #FFF;
+  color: #FFF;
+  padding: .4rem .6rem;
+  transition: color .3s ease-in-out, border .3s ease-in-out;
+}
+
+.btn-typ-2:hover {
+  border: 2px solid #a62c21;
+  color: #a62c21;
+}
+
+.btn-typ-3 {
+  background-color: transparent;
+  border: 2px solid #3d3f45;
+  color: #3d3f45;
+  font-size: 1rem;
+  transition: border .3s ease-in-out;
+}
+
+.btn-typ-3:hover {
+  border: 2px solid #a62c21;
+}
+
 
 /* === ANFANG NAVIGATIONSLEISTE INSGESAMT === */
 
@@ -396,7 +406,7 @@ section {
   height: 37px;
   position: relative;
   margin-top: .4rem;
-  margin-bottom: 8px;
+  margin-bottom: .5rem;
 }
 
 #mobile-nav-button > span {
@@ -485,6 +495,7 @@ section {
   #nb-email-input {
     width: 70%;
   }
+
 }
 
 @media (max-width: 1366px) {
@@ -497,6 +508,7 @@ section {
   #nb-btn {
     width: 100%
   }
+
 }
 
 @media (max-width: 768px) {
@@ -512,6 +524,7 @@ section {
   #newsletter-bereich .col-4 {
     display: none;
   }
+
 }
 
 @media (max-width: 480px) {
@@ -584,8 +597,8 @@ section {
   #animiertes-logo {
     display: none
   }
-}
 
+}
 
 /* === ENDE ANIMIERTES LOGO === */
 
@@ -655,7 +668,8 @@ margin-bottom: 1.6rem;
 
   .leistungs-teaser-box {
     width: 75%;
-    }
+  }
+
 }
 
 @media (max-width: 1024px) {
@@ -663,7 +677,7 @@ margin-bottom: 1.6rem;
   .leistungs-teaser-box {
     width: 90%;
     margin-bottom: 1rem;
-    }
+  }
 
     #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-teaser-box {
       margin-left: 0.5rem;
@@ -672,6 +686,7 @@ margin-bottom: 1.6rem;
     #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-teaser-box {
       margin-right: 0.5rem;
     }
+
 }
 
 @media (max-width: 768px) {
@@ -683,7 +698,7 @@ margin-bottom: 1.6rem;
   .leistungs-teaser-box {
     width: 100%;
     margin-bottom: 1rem;
-    }
+  }
 
   #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-teaser-box {
     margin-left: 0;
@@ -694,6 +709,7 @@ margin-bottom: 1.6rem;
     margin-right: 0;
     margin-left: 0;
   }
+
 }
 
 @media  (max-width: 480px) {
@@ -701,6 +717,7 @@ margin-bottom: 1.6rem;
     padding-right: 1.5rem;
     padding-left: 1.5rem;
   }
+
 }
 
 /* === ENDE LEISTUNGS-BEREICH === */
@@ -724,28 +741,31 @@ margin-bottom: 1.6rem;
 
   #video-bereich video {
     width: 45%;
-}
+  }
 
 }
+
 @media (max-width: 1024px) {
 
   #video-bereich video {
     width: 60%;
-}
+  }
 
 }
+
 @media (max-width: 768px) {
 
   #video-bereich video {
     width: 75%;
-}
+  }
 
 }
+
 @media (max-width: 480px) {
 
   #video-bereich video {
     width: 100%;
-}
+  }
 
 }
 /* === ENDE VIDEO-BEREICH === */
@@ -851,20 +871,19 @@ font-size: 1.4rem;
 
   #über-uns-container > img {
     right: 20px;
-
   }
+
 }
 
 @media (max-width: 1366px) {
 
   #über-uns-container > img {
     right: 10px;
-
   }
   #über-uns-container > p {
     width: 73%;
-
   }
+
 }
 
 
@@ -872,19 +891,17 @@ font-size: 1.4rem;
 
   #über-uns-container > img {
     right: 0;
-
   }
   #über-uns-container > p {
     width: 70%;
-
   }
+
 }
 
 @media (max-width: 1140px) {
 
   #über-uns-container > p {
     width: 60%;
-
   }
 
 }
@@ -893,13 +910,12 @@ font-size: 1.4rem;
 
   #über-uns-container > img {
     display: none;
-
   }
 
   #über-uns-container > p {
     width: 100%;
-
   }
+
 }
 
 /* === ANFANG ÜBER-UNS-BEREICH === */
@@ -912,6 +928,7 @@ font-size: 1.4rem;
   color: #FFF;
   bottom: 0px;
 }
+
 #footer-nav {
   display: inline-block;
   float: right;
@@ -921,7 +938,6 @@ font-size: 1.4rem;
   text-decoration: none;
   color: #FFF;
 }
-
 
 #footer-nav a:link{
   color: #FFF;
@@ -979,19 +995,22 @@ align-items: center;
   width: 100%;
 }
 
-/* Hier Media-queries für den Intro-Bereich Flex-Box auf der Leistunngs-Seite */
+/* Hier Media-queries für den Intro-Bereich Flex-Box auf der Leistungs-Seite */
 
 @media (max-width: 1366px) {
 
   .flex-container {
     width: 90%;
-    }
-    .flex-container > p {
-      margin-bottom: .5rem;
-    }
-    .leistung {
-      padding-top: 2rem;
-    }
+   }
+
+  .flex-container > p {
+    margin-bottom: .5rem;
+  }
+
+  .leistung {
+    padding-top: 2rem;
+  }
+
 }
 
 @media (max-width: 1024px) {
@@ -1000,7 +1019,7 @@ align-items: center;
     width: 100%;
     padding-right: 3rem;
     padding-left: 3rem;
-    }
+  }
 
 }
 
@@ -1009,6 +1028,7 @@ align-items: center;
   .flex-container > p {
     margin-bottom: 0;
   }
+
 }
 
 .leistungs-box {
@@ -1042,6 +1062,7 @@ align-items: center;
   .leistungs-box-empfohlen {
     flex-basis: 31.5%;
   }
+
 }
 
 @media (max-width: 1523px) {
@@ -1051,9 +1072,6 @@ align-items: center;
     padding: 1rem 2rem;
   }
 
-  /* .leistungs-box-empfohlen {
-    flex-basis: 32.5%;
-  } */
 }
 
 @media (max-width: 1470px) {
@@ -1066,6 +1084,7 @@ align-items: center;
   .leistungs-box-empfohlen {
     min-height: 660px;
   }
+
 }
 
 @media (max-width: 993px) {
@@ -1077,15 +1096,16 @@ align-items: center;
     margin-left: auto;
     margin-right: auto;
 
-    }
+  }
     .leistungs-box {
       margin-bottom: 2rem;
       min-height: initial;
       padding: 2rem 4rem;
-    }
+  }
     .leistung-auswählen-btn {
       min-width: 170px;
-    }
+  }
+
 }
 
 @media (max-width: 574px) {
@@ -1094,10 +1114,11 @@ align-items: center;
     width: 90%;
     padding-right: 1.5rem;
     padding-left: 1.5rem;
-    }
-    .leistungs-box {
-      padding: 1rem 2rem;
-    }
+  }
+  .leistungs-box {
+    padding: 1rem 2rem;
+  }
+
 }
 
 @media (max-width: 347px) {
@@ -1106,10 +1127,11 @@ align-items: center;
     width: 100%;
     padding-right: .5rem;
     padding-left: .5rem;
-    }
-    .leistungs-box {
-      padding: .5rem 1rem;
-    }
+  }
+  .leistungs-box {
+    padding: .5rem 1rem;
+  }
+
 }
 
 .leistungs-box ul {
@@ -1160,6 +1182,7 @@ align-items: center;
   color: #3d3f45;
   transition: border .3s ease-in-out;
 }
+
 #kontakt-formular textarea {
   height: 100px;
 }
@@ -1176,13 +1199,10 @@ align-items: center;
   height: 39px;
 }
 
-
 #kontakt-formular input:hover,
 #kontakt-formular textarea:hover {
   border: 2px solid #a62c21;
 }
-
-
 
 /* Hier Media-queries für den Kontakt-Bereich auf Kontakt-Seite */
 
@@ -1190,14 +1210,16 @@ align-items: center;
 
   #kontakt-formular {
     width: 90%;
-    }
+  }
+
 }
 
 @media (max-width: 1024px) {
 
   #kontakt-formular {
     width: 100%;
-    }
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -1205,6 +1227,7 @@ align-items: center;
   #kontakt-formular button{
     width: 100%;
   }
+
 }
 /* === ENDE KONTAKT-SEITE === */
 
@@ -1320,4 +1343,5 @@ p { /* Inhalt aller p's soll sich ausbreiten und wieder dunkleres Blau
   #mobile-nav {
     display: block;
   }
+
 }

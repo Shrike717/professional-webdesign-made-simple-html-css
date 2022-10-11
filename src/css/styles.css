@@ -595,6 +595,10 @@ section {
   padding-top: 1rem;
 }
 
+#leistung1 {
+  padding-top: 1.4rem;
+}
+
 .leistungs-teaser-box {
 background-color: #3d3f45;
 text-align: center;
@@ -1142,6 +1146,10 @@ align-items: center;
 
 /* === ANFANG KONTAKT-SEITE === */
 
+#kontakt-bereich {
+  padding-top: 1rem;
+}
+
 #kontakt-formular input,
 #kontakt-formular textarea {
   width: 100%;
@@ -1201,6 +1209,10 @@ align-items: center;
 /* === ENDE KONTAKT-SEITE === */
 
 /* === ANFANG IMPRESSUM-SEITE === */
+
+#impressum {
+  padding-top: 1rem;
+}
 
 #impressum a {
   color: #3d3f45;

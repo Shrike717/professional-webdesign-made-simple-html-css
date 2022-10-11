@@ -247,7 +247,7 @@ section {
   font-size: 1.2rem;
 }
 
-/* Hier Media-queries für den Intro-bereich im Leistunngs-Bereich */
+/* Hier Media-queries für den Intro-bereich im Leistungs-Bereich */
 
 @media (max-width: 1366px) {
 
@@ -292,7 +292,6 @@ section {
   height: 50px;
   background-color: #3d3f45;
   position: relative;
-  /* font-weight: bold; */
   font-size: 1.1rem;
 }
 
@@ -581,8 +580,6 @@ section {
   }
 }
 
-
-
 /* === ENDE ANIMIERTES LOGO === */
 
 /* === ANFANG LEISTUNGS-BEREICH === */
@@ -610,7 +607,6 @@ margin-bottom: 1.6rem;
   margin-right: 1rem;
 }
 
-
 .leistung-ansehen-btn {
   text-decoration: none;
   height: 40px;
@@ -623,7 +619,6 @@ margin-bottom: 1.6rem;
 
 .leistung-ansehen-btn:link {
   color: #FFF;
-
 }
 
 .leistung-ansehen-btn:visited {
@@ -632,7 +627,6 @@ margin-bottom: 1.6rem;
 
 .leistung-ansehen-btn:active {
   color: #FFF;
-
 }
 
 .leistung-ansehen-btn:hover {
@@ -938,7 +932,7 @@ font-size: 1.4rem;
 /* === ANFANG LEISTUNGS-SEITE === */
 
 .leistung {
-  padding-top: 2rem;
+  padding-top: 4rem;
   padding-bottom: 4rem;
 }
 
@@ -968,6 +962,9 @@ align-items: center;
     }
     .flex-container > p {
       margin-bottom: .5rem;
+    }
+    .leistung {
+      padding-top: 2rem;
     }
 }
 

@@ -580,9 +580,20 @@ section {
   }
 }
 
+@media (max-width: 768px) {
+  #animiertes-logo {
+    display: none
+  }
+}
+
+
 /* === ENDE ANIMIERTES LOGO === */
 
 /* === ANFANG LEISTUNGS-BEREICH === */
+
+#leistungen-bereich {
+  padding-top: 1rem;
+}
 
 .leistungs-teaser-box {
 background-color: #3d3f45;
@@ -661,6 +672,10 @@ margin-bottom: 1.6rem;
 
 @media (max-width: 768px) {
 
+  .intro-container {
+    margin-bottom: 1rem;
+  }
+
   .leistungs-teaser-box {
     width: 100%;
     margin-bottom: 1rem;
@@ -675,7 +690,13 @@ margin-bottom: 1.6rem;
     margin-right: 0;
     margin-left: 0;
   }
+}
 
+@media  (max-width: 480px) {
+  .leistungs-teaser-box {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
 }
 
 /* === ENDE LEISTUNGS-BEREICH === */
@@ -819,6 +840,7 @@ font-size: 1.4rem;
 #über-uns-container > p {
   width: 75%;
   font-size: 1.2rem;
+  margin-top: 0;
 }
 
 @media (max-width: 1440px) {

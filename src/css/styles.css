@@ -571,7 +571,32 @@ section {
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-direction: alternate; */
-  animation: animationDrehung 5s ease-in-out infinite alternate;
+  -webkit-animation: animationDrehung 5s ease-in-out infinite alternate;
+          animation: animationDrehung 5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes animationDrehung {
+
+  0%    { transform: rotateZ(0deg);
+        }
+  11.111%   { transform: rotateZ(0deg);
+        }
+  22.222%   { transform: rotateZ(90deg);
+        }
+  33.333%   { transform: rotateZ(90deg);
+        }
+  44.444%   { transform: rotateZ(180deg);
+        }
+  55.555%   { transform: rotateZ(180deg);
+        }
+  66.666%   { transform: rotateZ(270deg);
+        }
+  77.777%   { transform: rotateZ(270deg);
+        }
+  88.888%  {  transform: rotateZ(360deg);
+        }
+  100%  {  transform: rotateZ(360deg);
+  }
 }
 
 @keyframes animationDrehung {

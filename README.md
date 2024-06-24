@@ -1,6 +1,6 @@
 # Webdesign-Made-Simple
 
-This repository contains the professional company website "Webdesign-Made-Simple," created as part of the Udemy course "Der ultimative HTML5 und CSS3 Komplettkurs" by Ruben Winkler. This course provided a comprehensive introduction to HTML5 and CSS3, both in theory and practice. TEST
+This repository contains the professional company website "Webdesign-Made-Simple," created as part of the Udemy course "Der ultimative HTML5 und CSS3 Komplettkurs" by Ruben Winkler. This course provided a comprehensive introduction to HTML5 and CSS3, both in theory and practice.
 
 ## Course Content
 

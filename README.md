@@ -31,4 +31,4 @@ The "Webdesign-Made-Simple" company website demonstrates the practical use of HT
 ## Course Link
 
 The project was created using the following course:
-[The Ultimate HTML5 and CSS3 Mastery Course - Udemy | Ruben Winkler](https://www.udemy.com/course/der-ultimative-html5-und-css3-komplettkurs/learn/lecture/9011264?start=0#overview)
+[Der ultimative HTML5 und CSS3 Komplettkurs - Udemy | Ruben Winkler](https://www.udemy.com/course/der-ultimative-html5-und-css3-komplettkurs/?couponCode=LETSLEARNNOWPP)
